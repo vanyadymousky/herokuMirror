@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  a(href='/articles') Go back
+  h1= title
+  form(name="add new article", method="post")
+      div.input
+          span.label Title
+          input(type="text", name="title")
+      div.input
+          span.label Description
+          textarea(name="text", cols="40", rows="5")
+      div.input
+          span.label Author
+          input(type="text", name="author")
+      div.input
+          span.label Created At
+          input(type="date", name="createdAt")
+      div.actions
+          input(type="submit", value="add")
