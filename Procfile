@@ -1,1 +1,1 @@
-web: node index.js
+web: set DEBUG=news:* & npm start
